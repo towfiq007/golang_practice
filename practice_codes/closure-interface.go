@@ -33,11 +33,12 @@ func main() {
 	v := Vertex{3, 4}
 
 	a = f  // a MyFloat implements Abser
+	fmt.Println(a.Abs())
 	a = &v // a *Vertex implements Abser
-
+	fmt.Println(a.Abs())
+	
 	// In the following line, v is a Vertex (not *Vertex)
 	// and does NOT implement Abser.
-	a = v
-
-	fmt.Println(a.Abs())
+	//a = v
+	// fmt.Println(a.Abs())
 }
